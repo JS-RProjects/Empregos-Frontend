@@ -1,0 +1,139 @@
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+
+.container2 {
+    min-width: 650px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    margin-top: 15px;
+}
+
+.profile {
+    background: rgb(255, 154, 60);
+    border-radius: 12px;
+
+    min-width: 950px;
+    min-height: 650px;
+    height: 100%;
+    width: 80%;
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+/* .profile .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.profile {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 30px;
+}
+
+.profile .img p {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.profile .img label {
+    font-weight: 700;
+    font-size: 25px;
+    /* margin-bottom: -50px; */
+    margin-right: 5px;
+}
+
+.profile .img {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(255, 146, 44);
+    height: 500px;
+    border-radius: 12px;
+}
+
+.profile .description {
+    max-width: 50% !important;
+    min-height: 450px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .description p {
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+}
+
+.uf {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.cidade {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-left {
+    color: #FFF;
+
+    transition: color 0.7s;
+}
+
+.arrow-left:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.voltar-btn {
+    background-color: #4343fc;
+
+    transition: background-color 0.7s;
+}
+
+.voltar-btn:hover {
+    background-color: #7c7cff !important;
+}
+
+.sair-btn {
+    background-color: red;
+
+    transition: background-color 0.7s;
+}
+
+.sair-btn:hover {
+    background-color: #ff6161 !important;
+}

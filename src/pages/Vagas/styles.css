@@ -1,0 +1,154 @@
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.filter-bar {
+    position: fixed;
+    background: rgb(223, 129, 41);
+    width: 25%;
+    max-width: 25%;
+    height: 100vh;
+    border-right: 3px solid #FFF;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filtros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filtros label {
+    font-weight: 700;
+    font-size: 19px;
+    width: 70%;
+    text-align: left;
+}
+
+.filtros .filter-input {
+    width: 250px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 4px;
+    height: 25px;
+}
+
+.filter-bar .title {
+    color: #FFF !important;
+    font-weight: 400 !important;
+    font-size: 45px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    /* margin-top: 30px; */
+}
+
+.filter-bar .title:hover {
+    border-bottom: 3px solid #FFF;
+    cursor: pointer;
+}
+
+.filtros button {
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+
+    font-weight: 700;
+    font-size: 19px;
+    background: transparent;
+    border: 3px solid #FFF;
+    color: #FFF;
+
+    transition: background-color 0.8s, color 0.8s;
+}
+
+.filtros button:hover {
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+
+.filtros p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.form-filter {
+    width: 25%;
+}
+
+.vaga {
+    border-bottom: 1px solid #FFF;
+    padding: 10px;
+    
+    font-family: 'Open Sans',sans-serif;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    flex-direction: row;
+}
+
+.vaga strong {
+    font-size: 23px;
+}
+
+.vaga p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.vagas {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* position: absolute; */
+    float: right;
+}
+
+.vaga img {
+    border-radius: 75px;
+    margin-right: 15px;
+}
+
+.empresalink {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid #FFF;
+}
+
+.trash {
+    color: white;
+    transition: color 1s;
+    margin: 10px;
+}
+
+.trash:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.div-vaga {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.vaga-content {
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+.container2 {
+    /* min-height: 450px; */
+    /* height: 100%; */
+    min-width: 650px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    margin-top: 50px;
+}
+    
+.container2 .title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+
+    color: #FFF;
+    text-decoration: none;
+}
+
+.container2 .title:hover {
+    border-bottom: 3px solid #FFF;
+}
+
+.container2 .description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+  
+    width: 900px;
+    margin-top: 50px;
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
