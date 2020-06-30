@@ -10,6 +10,7 @@ export default function CadastrarEmpresa({ history }){
     const [name, setName] = useState('');
     const [uf, setUF] = useState('');
     const [cidade, setCidade] = useState('');
+    const [description,setDescription] = useState('');
 
     const preview = useMemo(() => {
         return thumbnail ? URL.createObjectURL(thumbnail) : null;
@@ -23,9 +24,10 @@ export default function CadastrarEmpresa({ history }){
         data.append('name', name);
         data.append('email', email);
         data.append('password', password);
-        data.append('cidade', cidade);
+        data.append('city', cidade);
         data.append('uf', uf);
         data.append('thumbnail', thumbnail);
+        data.append('description',description)
 
         const login = await api.post('/empresa/create',data);
         console.log(login.data);
@@ -97,7 +99,10 @@ export default function CadastrarEmpresa({ history }){
                     <input type="email" name="email" required className="input" onChange={event => {setEmail(event.target.value)}}/>
                     <label htmlFor="password">SENHA *</label>
                     <input type="password" name="pass" required className="input" onChange={event => {setPass(event.target.value)}}/>
-                    
+
+                    <label htmlFor="text">DESCRIÇÃO *</label>
+                    <input type="text" name="name" className="input" required onChange={event => {setDescription(event.target.value)}}/>
+
                     <label>UF *</label>
                     <input type="text" name="uf" className="input" required onChange={event => {setUF(event.target.value)}}/>
                     <label>CIDADE *</label>
