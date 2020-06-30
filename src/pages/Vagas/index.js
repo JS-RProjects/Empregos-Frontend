@@ -61,6 +61,7 @@ export default function Vagas({ history }){
 
                             setVagas(c.data); 
                         }}>FILTRAR</button>
+                    <button onClick={() => history.push('/vagas/new')} style={{marginTop: '10px'}}><strong>CRIAR VAGA</strong></button>
                     </div>
                 </div>
                 <div className="vagas">

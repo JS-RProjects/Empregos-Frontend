@@ -49,6 +49,7 @@ export default function PerfilEmpresa({ match,history }){
             <div className="menu" style={{display: 'flex',alignItems: 'flex-start',justifyContent: 'initial',width:'80%'}}>
                 <button onClick={logout_back} style={{background: 'transparent', border: 0}}><FaArrowLeft className="arrow-left" size="30px"/></button>
                 <p onClick={() => history.push('/vagas')} style={{ borderBottom: '3px solid #FFF', cursor: 'pointer', fontSize: '20px', marginLeft: '20px' }}><strong>VER VAGAS</strong></p>
+                <p onClick={() => history.push('/vagas/new')} style={{ borderBottom: '3px solid #FFF', cursor: 'pointer', fontSize: '20px', marginLeft: '20px' }}><strong>CRIAR VAGA</strong></p>
             </div>
             <div className="profile">
                 <div className="img">
@@ -56,6 +57,10 @@ export default function PerfilEmpresa({ match,history }){
                     <div className="name">
                         <label>NOME:</label>
                         <p>{user ? user.data.name : ''}</p>
+                    </div>
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
+                        <label style={{width: '75%', textAlign:'left'}}>EMAIL:</label>
+                        <p style={{fontSize: '22px', fontWeight: '400'}}>{user ? user.data.email : ''}</p>
                     </div>
                     <div className="local">
                         <div className="cidade">

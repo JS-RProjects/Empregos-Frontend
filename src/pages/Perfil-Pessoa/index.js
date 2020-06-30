@@ -57,6 +57,10 @@ export default function PerfilPessoa({ match,history }){
                         <label>NOME:</label>
                         <p>{user ? user.data.name : ''}</p>
                     </div>
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
+                        <label style={{width: '75%', textAlign:'left'}}>EMAIL:</label>
+                        <p style={{fontSize: '22px', fontWeight: '400'}}>{user ? user.data.email : ''}</p>
+                    </div>
                     <div className="local">
                         <div className="cidade">
                             <label>CIDADE:</label>
