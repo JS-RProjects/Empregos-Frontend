@@ -73,6 +73,7 @@
 
 .profile .description {
     max-width: 50% !important;
+    width: 60% !important;
     min-height: 450px;
     height: 100%;
 
